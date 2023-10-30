@@ -1,9 +1,6 @@
 [submodule "src/postgresql_modified_for_babelfish"]
 	path = src/postgresql_modified_for_babelfish
 	url = https://github.com/wiltondb/postgresql_modified_for_babelfish.git
-[submodule "src/babelfish_extensions_modified_for_wiltondb"]
-	path = src/babelfish_extensions_modified_for_wiltondb
-	url = https://github.com/wiltondb/babelfish_extensions_modified_for_wiltondb.git
 [submodule "src/pg_hint_plan"]
 	path = src/pg_hint_plan
 	url = https://github.com/wiltondb/pg_hint_plan.git
@@ -19,3 +16,9 @@
 [submodule "tools/wdb_config"]
 	path = tools/wdb_config
 	url = https://github.com/wiltondb/wdb_config.git
+[submodule "src/babelfish_extensions"]
+	path = src/babelfish_extensions
+	url = https://github.com/wiltondb/babelfish_extensions.git
+[submodule "packages/wdb_windows_msi"]
+	path = packages/wdb_windows_msi
+	url = https://github.com/wiltondb/wdb_windows_msi.git
