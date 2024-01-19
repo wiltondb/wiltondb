@@ -8,6 +8,10 @@ Link to [documentation](https://github.com/wiltondb/wiltondb/wiki).
 News
 ----
 
+**2024-01-17**
+
+Initial version of WiltonDB Backup GUI tool [is released](https://github.com/wiltondb/wdb_backup/releases/tag/1.0.0). Descriptions about it [is added to documentation](https://github.com/wiltondb/wiltondb/wiki/WiltonDB-Backup-GUI-tool) along with a more broad article about [backup and restore overview in Babelfish](https://github.com/wiltondb/wiltondb/wiki/Backup-and-restore-overview-in-Babelfish).
+
 **2023-12-31**
 
 WiltonDB 3.3 update (version 3.5.1) [is released](https://github.com/wiltondb/wiltondb/releases/tag/3.3-3-5-1).
