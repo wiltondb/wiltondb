@@ -8,6 +8,12 @@ Link to [documentation](https://github.com/wiltondb/wiltondb/wiki).
 News
 ----
 
+**2024-02-12**
+
+WiltonDB 3.3 update (version 4.6.1) is [released](https://github.com/wiltondb/wiltondb/releases/tag/3.3-4-6-1) for [Windows](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-windows) and [Linux](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-linux).
+
+This update includes a [security fix from PostgreSQL 15.6](https://www.postgresql.org/about/news/postgresql-162-156-1411-1314-and-1218-released-2807/) and a critical fix from `BABEL_3_3_STABLE` branch of the [upstream Babelfish](https://github.com/babelfish-for-postgresql/babelfish_extensions/commits/6cc9e2307f498c48993f37c48bf40f2e6195d407/).
+
 **2024-01-17**
 
 Initial version of WiltonDB Backup GUI tool is [released](https://github.com/wiltondb/wdb_backup/releases/tag/1.0.0). Description about it is [added to documentation](https://github.com/wiltondb/wiltondb/wiki/WiltonDB-Backup-GUI-tool) along with more broad [article about backup and restore](https://github.com/wiltondb/wiltondb/wiki/Backup-and-restore-overview-in-Babelfish).
