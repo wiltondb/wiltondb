@@ -12,6 +12,8 @@ News
 
 WiltonDB 3.3 update (version 4.6.1) is [released](https://github.com/wiltondb/wiltondb/releases/tag/3.3-4-6-1) for [Windows](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-windows) and [Linux](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-linux).
 
+With this update plain ZIP bundle is provided for Windows that can be used to set up and run WiltonDB [under non-privileged user](https://github.com/wiltondb/wiltondb/wiki/Running-under-non%E2%80%90privileged-user).
+
 This update includes a [security fix from PostgreSQL 15.6](https://www.postgresql.org/about/news/postgresql-162-156-1411-1314-and-1218-released-2807/) and a critical fix from `BABEL_3_3_STABLE` branch of the [upstream Babelfish](https://github.com/babelfish-for-postgresql/babelfish_extensions/commits/6cc9e2307f498c48993f37c48bf40f2e6195d407/).
 
 **2024-01-17**
