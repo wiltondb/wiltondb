@@ -22,3 +22,6 @@
 [submodule "packages/wdb_windows_msi"]
 	path = packages/wdb_windows_msi
 	url = https://github.com/wiltondb/wdb_windows_msi.git
+[submodule "src/tds_fdw"]
+	path = src/tds_fdw
+	url = https://github.com/wiltondb/tds_fdw.git
