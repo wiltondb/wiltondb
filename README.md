@@ -8,6 +8,12 @@ Link to [documentation](https://github.com/wiltondb/wiltondb/wiki).
 News
 ----
 
+**2024-02-23**
+
+WiltonDB 3.3 update (version 4.7.1) is [released](https://github.com/wiltondb/wiltondb/releases/tag/3.3-4-7-1) for [Windows](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-windows).
+
+This update includes support for [Linked Servers and OPENQUERY](https://github.com/wiltondb/wiltondb/wiki/Linked-Servers-and-OPENQUERY).
+
 **2024-02-12**
 
 WiltonDB 3.3 update (version 4.6.1) is [released](https://github.com/wiltondb/wiltondb/releases/tag/3.3-4-6-1) for [Windows](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-windows) and [Linux](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-linux).
