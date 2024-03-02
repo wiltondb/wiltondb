@@ -8,6 +8,18 @@ Link to [documentation](https://github.com/wiltondb/wiltondb/wiki).
 News
 ----
 
+**2024-03-02**
+
+WiltonDB 3.3 update (version 4.9.1) is [released](https://github.com/wiltondb/wiltondb/releases/tag/3.3-4-9-1) for [Windows](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-windows) and [Linux](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-linux).
+
+With this update [Linked Servers and OPENQUERY](https://github.com/wiltondb/wiltondb/wiki/Linked-Servers-and-OPENQUERY) functionality is now supported in Linux packages the same way it works on Windows.
+
+This updates includes bugfixes to issues #10 and #11. This requires minor changes to stored procedures and views in `babelfishpg_tsql` extension, its version is bumped from `3.3.0` to `3.3.1`. When performing the upgrade from previous versions of WiltonDB 3.3 (using existing DB cluster), it is necessary to run the following SQL on Postgres connection (port `5432` by default):
+
+```
+ALTER EXTENSION "babelfishpg_tsql" UPDATE TO '3.3.1'
+```
+
 **2024-02-23**
 
 WiltonDB 3.3 update (version 4.7.1) is [released](https://github.com/wiltondb/wiltondb/releases/tag/3.3-4-7-1) for [Windows](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-windows).
