@@ -8,6 +8,16 @@ Link to [documentation](https://github.com/wiltondb/wiltondb/wiki).
 News
 ----
 
+**2024-03-17**
+
+WiltonDB 3.3 update (version 5.10.1) is [released](https://github.com/wiltondb/wiltondb/releases/tag/3.3-5-10-1) for [Windows](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-windows) and [Linux](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-linux).
+
+This update includes two notable bugfixes from upstream Babelfish - [#1957](https://github.com/babelfish-for-postgresql/babelfish_extensions/pull/1957) and [#2017](https://github.com/babelfish-for-postgresql/babelfish_extensions/pull/2017). The former one introduces additional `CASTs` in `babelfishpg_common` extension, its version is bumped from `3.3.0` to `3.3.1`. When performing the upgrade from previous versions of WiltonDB 3.3 (using existing DB cluster), it is necessary to run the following SQL on Postgres connection (port `5432` by default):
+
+```
+ALTER EXTENSION "babelfishpg_common" UPDATE TO '3.3.1'
+```
+
 **2024-03-02**
 
 WiltonDB 3.3 update (version 4.9.1) is [released](https://github.com/wiltondb/wiltondb/releases/tag/3.3-4-9-1) for [Windows](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-windows) and [Linux](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-linux).
