@@ -8,6 +8,12 @@ Link to [documentation](https://github.com/wiltondb/wiltondb/wiki).
 News
 ----
 
+**2024-03-29**
+
+Initial version of [WiltonDB Data Transfer GUI tool](https://github.com/wiltondb/wiltondb/wiki/WiltonDB-Data-Transfer-GUI-tool) is [released](https://github.com/wiltondb/wdb_transfer/releases).
+
+WiltonDB 3.3 update (version 6.11.1) is [released](https://github.com/wiltondb/wiltondb/releases/tag/3.3-6-11-1) for [Windows](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-windows). This update includes a Windows-only fix to intermittent problem with BCP imports ([#13](https://github.com/wiltondb/wiltondb/issues/13)).
+
 **2024-03-17**
 
 WiltonDB 3.3 update (version 5.10.1) is [released](https://github.com/wiltondb/wiltondb/releases/tag/3.3-5-10-1) for [Windows](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-windows) and [Linux](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-linux).
