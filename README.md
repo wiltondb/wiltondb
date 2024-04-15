@@ -8,6 +8,16 @@ Link to [documentation](https://github.com/wiltondb/wiltondb/wiki).
 News
 ----
 
+**2024-04-15**
+
+WiltonDB 3.3 update (version 7.12.1) is [released](https://github.com/wiltondb/wiltondb/releases/tag/3.3-7-12-1) for [Windows](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-windows) and [Linux](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-linux).
+
+Changes:
+
+ - a number of fixes in BCP import area ([#2422](https://github.com/babelfish-for-postgresql/babelfish_extensions/pull/2422), [#2455](https://github.com/babelfish-for-postgresql/babelfish_extensions/issues/2455), [#2462](https://github.com/babelfish-for-postgresql/babelfish_extensions/issues/2462), [#2468](https://github.com/babelfish-for-postgresql/babelfish_extensions/issues/2468), [#2486](https://github.com/babelfish-for-postgresql/babelfish_extensions/issues/2486))
+ - [mimalloc](https://github.com/microsoft/mimalloc) allocator is added on Windows to improve ANTLR memory handling, this makes DB connection initialization 10-15% faster
+ - [system_stats](https://github.com/EnterpriseDB/system_stats) extension is included with Windows installer and Linux packages, see details about its usage in [Database-monitoring](https://github.com/wiltondb/wiltondb/wiki/Database-monitoring)
+
 **2024-03-29**
 
 Initial version of [WiltonDB Data Transfer GUI tool](https://github.com/wiltondb/wiltondb/wiki/WiltonDB-Data-Transfer-GUI-tool) is [released](https://github.com/wiltondb/wdb_transfer/releases).
