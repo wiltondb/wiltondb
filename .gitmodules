@@ -25,3 +25,6 @@
 [submodule "src/tds_fdw"]
 	path = src/tds_fdw
 	url = https://github.com/wiltondb/tds_fdw.git
+[submodule "src/system_stats"]
+	path = src/system_stats
+	url = https://github.com/EnterpriseDB/system_stats
