@@ -8,6 +8,25 @@ Link to [documentation](https://github.com/wiltondb/wiltondb/wiki).
 News
 ----
 
+**2024-05-16**
+
+WiltonDB 3.3 update (version 8.13.1) is [released](https://github.com/wiltondb/wiltondb/releases/tag/3.3-8-13-1) for [Windows](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-windows) and [Linux](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-linux).
+
+Bugfixes:
+
+ - this release includes a fix to [CVE-2024-4317](https://www.postgresql.org/support/security/CVE-2024-4317/) from upstream PostgreSQL 15.7. To apply the fix to existing DB clusters it is necessary to run `<installdir>/share/fix-CVE-2024-4317.sql` script on Postgres connection (default port `5432`)
+ - [#2540](https://github.com/babelfish-for-postgresql/babelfish_extensions/pull/2540) fix is backported from upstream Babelfish. It fixes the problem when altering a table to add a column with `DEFAULT NEWID()` makes the values all the same value which is not the correct behaviour. To apply the fix to existing DB cluster it is necessary to run the following SQL on Postgres connection (default port `5432`):
+
+```
+ALTER EXTENSION "babelfishpg_common" UPDATE TO '3.3.2'
+```
+
+Notable changes:
+
+ - support for `ALTER AUTHORIZATION ON DATABASE::<dbname> TO <login-name>` ([#1954](https://github.com/babelfish-for-postgresql/babelfish_extensions/pull/1954)) is backported from upstream Babelfish. It allows to easily create login-owned databases, see details on [Logins and users wiki page](https://github.com/wiltondb/wiltondb/wiki/Logins-and-users)
+ - support for `FOR JSON AUTO` ([#2243](https://github.com/babelfish-for-postgresql/babelfish_extensions/pull/2243)) is backported from upstream Babelfish
+ - default TDS debug logging, which was creating multiple log records for every connection, is disabled; this behaviour can be controlled by changing `babelfishpg_tds.tds_debug_log_level` system parameter from `0` (disabled) to `3` (max verbosity)
+
 **2024-04-15**
 
 WiltonDB 3.3 update (version 7.12.1) is [released](https://github.com/wiltondb/wiltondb/releases/tag/3.3-7-12-1) for [Windows](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-windows) and [Linux](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-linux).
