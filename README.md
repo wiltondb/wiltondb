@@ -7,6 +7,37 @@ Link to [documentation](https://github.com/wiltondb/wiltondb/wiki).
 
 News
 ----
+**2024-06-30**
+
+WiltonDB 3.3 update (version 10.14.1) is [released](https://github.com/wiltondb/wiltondb/releases/tag/3.3-10-14-1) for [Windows](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-windows) and [Linux](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-linux).
+
+Microsoft Visual C++ Redistributable update:
+
+Before installing this update on Windows **it is necessary to update [Microsoft Visual C++ Redistributable package](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) to version `14.40.33810.0` or later**. Latest version of MSVC 2022 compiler has introduced incompatibility with older versions of Redistributable package (details: [1](https://developercommunity.visualstudio.com/t/Builds-against-MSVC-Redistributable-144/10690723), [2](https://developercommunity.visualstudio.com/t/Access-violation-in-_Thrd_yield-after-up/10664660#T-N10669053)), when running on older version of Redistributable package WiltonDB may randomly crash with the following message:
+
+```
+Faulting application name: postgres.exe, version: 15.0.4.24180, time stamp: 0x66803d50
+Faulting module name: MSVCP140.dll, version: 14.36.32532.0, time stamp: 0x04a30cf0
+Exception code: 0xc0000005
+Fault offset: 0x0000000000012f58
+Faulting application path: C:\Program Files\WiltonDB Software\wiltondb3.3\bin\postgres.exe
+Faulting module path: C:\Windows\SYSTEM32\MSVCP140.dll
+```
+
+Bugfixes:
+
+ - `OpenSSL` library is updated to version `3.0.14` that includes [one low-severity security fix](https://www.openssl.org/news/secadv/20240528.txt)
+ - a number of fixes backported from upstream Babelfish. To apply the changes related to string literals handling in `COALESCE` function to existing DB clusters, it is necessary to upgrade `babelfishpg_common` extension to version `3.3.3` by running the following SQL on Postgres connection (default port `5432`):
+
+```
+ALTER EXTENSION "babelfishpg_common" UPDATE TO '3.3.3'
+```
+
+Notable changes:
+
+ - this update introduces support for [jTDS JDBC driver](https://jtds.sourceforge.net/). Note, `useCursors` jTDS option is not supported - cursors are supported when used directly through JDBC API (excluding `cursor.last()` call)
+ - `DEFAULT` keyword is supported as a parameter to T-SQL function and procedures.
+
 
 **2024-05-16**
 
