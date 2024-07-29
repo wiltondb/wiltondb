@@ -7,6 +7,22 @@ Link to [documentation](https://github.com/wiltondb/wiltondb/wiki).
 
 News
 ----
+
+**2024-07-29**
+
+WiltonDB 3.3 update (version 11.15.1) is [released](https://github.com/wiltondb/wiltondb/releases/tag/3.3-11-15-1) for [Windows](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-windows) and [Linux](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-linux).
+
+Bugfixes:
+
+ - `CHECK CONSTRAINTS` hint support with bcp and related fixes ([#2628](https://github.com/babelfish-for-postgresql/babelfish_extensions/pull/2628))
+ - query parameters of type `binary(8)` are no longer confused with `rowversion` type ([#24](https://github.com/wiltondb/wiltondb/issues/24))
+ - resolve correct `INFORMATION_SCHEMA` views in T-SQL inline blocks ([#28](https://github.com/wiltondb/wiltondb/issues/28))
+
+Windows build changes:
+
+ - [Windows authentication](https://github.com/wiltondb/wiltondb/wiki/Windows-Authentication#setting-up-windows-authentication-in-wiltondb) support with SSPI ([#18](https://github.com/wiltondb/wiltondb/issues/18))
+ - support adding backtraces to error messages in server log if debuginfo files available in `<install_dir>/symbols` directory. `wiltondb3.3_debug_11.15.1.msi` installer is provided that includes debuginfo files files. Note, running server with backtraces enabled may be up to 1.5 times slower than normal runs.
+
 **2024-06-30**
 
 WiltonDB 3.3 update (version 10.14.1) is [released](https://github.com/wiltondb/wiltondb/releases/tag/3.3-10-14-1) for [Windows](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-windows) and [Linux](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-linux).
