@@ -28,3 +28,6 @@
 [submodule "src/system_stats"]
 	path = src/system_stats
 	url = https://github.com/EnterpriseDB/system_stats
+[submodule "src/pgagent"]
+	path = src/pgagent
+	url = https://github.com/wiltondb/pgagent.git
