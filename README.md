@@ -8,6 +8,14 @@ Link to [documentation](https://github.com/wiltondb/wiltondb/wiki).
 News
 ----
 
+**2024-11-03**
+
+WiltonDB 3 LTS (version 12.16.1) is [released](https://github.com/wiltondb/wiltondb/releases/tag/3-lts-12-16-1) for [Windows](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-windows) and [Linux](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-linux).
+
+**WARNING: THIS UPDATE IS NOT COMPATIBLE WITH DB CLUSTERS FROM PREIVIOUS WILTONDB VERSIONS**
+
+This update includes breaking changes implemented to fix the [#2987](https://github.com/babelfish-for-postgresql/babelfish_extensions/issues/2987) problem. Because of this there is no update path from version `11.15.1` - new DB cluster must be created. On Windows this is done automatically - default installation directory is changed to `C:\Program Files\WiltonDB Software\wiltondb_3_lts`. On Linux the existing DB cluster needs to be removed before running `wiltondb-setup`. 
+
 **2024-07-29**
 
 WiltonDB 3.3 update (version 11.15.1) is [released](https://github.com/wiltondb/wiltondb/releases/tag/3.3-11-15-1) for [Windows](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-windows) and [Linux](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-linux).
