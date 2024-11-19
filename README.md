@@ -8,6 +8,22 @@ Link to [documentation](https://github.com/wiltondb/wiltondb/wiki).
 News
 ----
 
+**2024-11-19**
+
+WiltonDB 3 LTS (version 13.17.1) is [released](https://github.com/wiltondb/wiltondb/releases/tag/3-lts-13-17-1) for [Windows](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-windows) and [Linux](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-linux).
+
+Notable changes:
+
+ - security patches and bugfixes from upstream [PostgreSQL 15.9](https://www.postgresql.org/about/news/postgresql-171-165-159-1414-1317-and-1221-released-2955/) and [15.10](https://github.com/postgres/postgres/commit/b57d9d2e5d5543cc0c4b2de70d65d7b7c4115da6)
+ - fix to the problem with `time`, `datetime2` and `datetimeoffset` precision handling and the `bcp` utility ([#91](https://github.com/wiltondb/wiltondb/issues/91))
+
+To upgrade the existing DB cluster run the following on Postgres connection:
+
+```sql
+ALTER EXTENSION "babelfishpg_common" UPDATE TO '3.3.6';
+ALTER EXTENSION "babelfishpg_tsql" UPDATE TO '3.3.3';
+```
+
 **2024-11-03**
 
 WiltonDB 3 LTS (version 12.16.1) is [released](https://github.com/wiltondb/wiltondb/releases/tag/3-lts-12-16-1) for [Windows](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-windows) and [Linux](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-linux).
