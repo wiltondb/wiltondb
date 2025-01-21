@@ -8,6 +8,12 @@ Link to [documentation](https://github.com/wiltondb/wiltondb/wiki).
 News
 ----
 
+**2025-11-21**
+
+WiltonDB 3 LTS (version 13.18.1) is [released](https://github.com/wiltondb/wiltondb/releases/tag/3-lts-13-18-1) for [Windows](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-windows).
+
+This update includes a fix to the error when a procedure is called with an empty table-valued parameter ([#97](https://github.com/wiltondb/wiltondb/issues/97)).
+
 **2024-11-19**
 
 WiltonDB 3 LTS (version 13.17.1) is [released](https://github.com/wiltondb/wiltondb/releases/tag/3-lts-13-17-1) for [Windows](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-windows) and [Linux](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-linux).
