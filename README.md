@@ -8,7 +8,7 @@ Link to [documentation](https://github.com/wiltondb/wiltondb/wiki).
 News
 ----
 
-**2025-11-21**
+**2025-01-21**
 
 WiltonDB 3 LTS (version 13.18.1) is [released](https://github.com/wiltondb/wiltondb/releases/tag/3-lts-13-18-1) for [Windows](https://github.com/wiltondb/wiltondb/wiki/Getting-Started#wiltondb-on-windows).
 
